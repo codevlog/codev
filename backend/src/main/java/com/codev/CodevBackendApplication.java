@@ -23,7 +23,6 @@ public class CodevBackendApplication {
 		sessionFactory.setDataSource(dataSource);
 		sessionFactory.setTypeAliasesPackage("com.codev.vo");
 
-		// 특정 경로나 위치에서 자원(파일)을 읽어 오는 객체
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		sessionFactory.setMapperLocations(resolver.getResources("classpath:mapper/*Mapper.xml"));
 		return sessionFactory.getObject();
