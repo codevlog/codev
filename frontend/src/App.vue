@@ -11,7 +11,7 @@ import Header from "./views/Header";
 import Footer from "./views/Footer";
 
 export default {
-  name: 'App';
+  name: 'App',
   components: {
     Header,
     Footer
@@ -20,5 +20,8 @@ export default {
 </script>
 
 <style lang="scss">
-
+*{
+  margin: 0;
+  padding: 0;
+}
 </style>
