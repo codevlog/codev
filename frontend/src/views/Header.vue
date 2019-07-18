@@ -17,10 +17,6 @@
         <div style="height:23px; display:block"></div>
         Portfolio
       </router-link>
-      <router-link to="" class="menu-content right">
-        <div style="height:23px; display:block"></div>
-        About Us
-      </router-link>
     </div>
   </div>
 </template>
