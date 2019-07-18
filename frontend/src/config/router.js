@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../views/Home.vue'
-import PortfolioList from "../views/main/portfolio/PortfolioList";
+import PortfolioPage from "../views/main/portfolio/PortfolioPage";
+import PortfolioDetail from "../views/main/portfolio/detail/PortfolioDetail";
 
 Vue.use(Router)
 
@@ -17,8 +18,13 @@ export default new Router({
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: PortfolioList
+      component: PortfolioPage
     },
+    {
+      path: '/portfolio/detail',
+      name: 'portfoliodetail',
+      component: PortfolioDetail,
+    }
     // {
     //   path: '/about',
     //   name: 'about',
