@@ -10,8 +10,10 @@
         </div>
         <div class="portfolio-container">
             <div v-for="i in portfolios.length" :key="i.id">
+
                 <pCard :title="portfolios[i - 1].title" :body="portfolios[i - 1].body"
                            :imgSrc="portfolios[i - 1].imgSrc"></pCard>
+
             </div>
 
         </div>
@@ -23,6 +25,7 @@
     import pCard from '../../../components/pCard'
     import Header from '../../Header'
 
+
     export default {
         name: '',
         props: {
@@ -33,8 +36,10 @@
         },
         components: {
             // eslint-disable-next-line vue/no-unused-components
+
             pCard,
             Header
+
         },
         data() {
             return {
@@ -75,6 +80,7 @@
         computed: {},
         created() {
             window.scrollTo(0,0)
+
         },
         mounted() {
         },
