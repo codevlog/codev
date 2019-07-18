@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Header></Header>
         <div class="search-wrapper">
             <div class="search">
                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -9,8 +10,10 @@
         </div>
         <div class="portfolio-container">
             <div v-for="i in portfolios.length" :key="i.id">
-                <Portfolio :title="portfolios[i - 1].title" :body="portfolios[i - 1].body"
-                           :imgSrc="portfolios[i - 1].imgSrc"></Portfolio>
+
+                <pCard :title="portfolios[i - 1].title" :body="portfolios[i - 1].body"
+                           :imgSrc="portfolios[i - 1].imgSrc"></pCard>
+
             </div>
 
         </div>
@@ -19,7 +22,9 @@
 </template>
 
 <script>
-    import Portfolio from '../../../components/Portfolio'
+    import pCard from '../../../components/pCard'
+    import Header from '../../Header'
+
 
     export default {
         name: '',
@@ -31,7 +36,10 @@
         },
         components: {
             // eslint-disable-next-line vue/no-unused-components
-            Portfolio,
+
+            pCard,
+            Header
+
         },
         data() {
             return {
@@ -71,6 +79,8 @@
         },
         computed: {},
         created() {
+            window.scrollTo(0,0)
+
         },
         mounted() {
         },

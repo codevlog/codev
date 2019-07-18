@@ -53,7 +53,7 @@ export default {
     padding: 0 20px;
     height: 80px;
     text-align: left;
-    font-size:30px;
+    font-size:50px;
   }
   .title{
     height: 100%;
