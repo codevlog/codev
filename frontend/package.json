@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "fullpage.js": "^3.0.7",
+    "module": "^1.2.5",
     "vue": "^2.6.10",
+    "vue-fullpage.js": "^0.1.4",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
