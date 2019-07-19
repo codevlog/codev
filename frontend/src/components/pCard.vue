@@ -6,7 +6,6 @@
             <span class="body-truncated">{{body}}</span>
         </div>
     </div>
-
 </template>
 
 <script>
@@ -47,8 +46,7 @@
     .card-title {
         margin-top: 1vh;
         margin-bottom: 1vh;
-        font-size: 1.5rem;
-    }
+        background: white;
 
     .body-truncated {
         overflow : hidden;
