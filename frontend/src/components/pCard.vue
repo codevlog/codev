@@ -16,6 +16,7 @@
             title: {type: String},
             body: {type: String},
             imgSrc: {type: String},
+            link: {type: String},
         },
         data () {
             return {
@@ -29,21 +30,23 @@
     .card-container {
         display: flex;
         flex-direction: column;
-        border: 3px solid balck;
+        border: 3px solid whitesmoke;
         max-width: 300px;
         max-height: 400px;
         padding: 10px 10px;
         overflow: hidden;
         border-radius: 5%;
-        background: white;
     }
     .card-image {
         height: 200px;
+        width: 100%;
+        border-radius: 5%;
     }
 
     .card-title {
-        font-size: 1.5rem;
-    }
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        background: white;
 
     .body-truncated {
         overflow : hidden;
@@ -62,7 +65,8 @@
     }
 
     .zoom:hover {
-        z-index: 900;
+        background:white;
+        z-index: 1000;
         transform: scale(1.2);
     }
 
